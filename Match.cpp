@@ -7,7 +7,7 @@
 #include "Match.h"
 
 
-Match Match::searchMatch(int beginDate, int endDate, string city, string state)
+int Match::searchMatch(int beginDate, int endDate, std::string city, std::string state)
 {
 	return 0;
 }

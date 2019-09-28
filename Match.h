@@ -7,40 +7,44 @@
 #include <iostream>
 #include <assert.h>
 
-#include "Date.h"
 #include "MatchManager.h"
 #include "Ticket.h"
-#include "MatchType.h"
 
 class Match
 {
 private:
 	int matchID;
 
-	Date time;
+	std::string time;
 
 	float ticketPrice;
 
-	string stadiumName;
+	std::string stadiumName;
 
-	string city;
+	std::string city;
 
-	string state;
+	std::string state;
 
 	MatchManager owner;
 
 	int matchType;
 
-	string teams[];
+	std::string teams[];
 
-	Ticket tickets[];
+	int tickets[];
 
-	string name;
+	std::string name;
 
-	MatchType matchType;
+	enum MatchType {
+        Local,
+        Estadual,
+        Nacional,
+        Internacional
+    };
 
 public:
-	Match searchMatch(int beginDate, int endDate, string city, string state);
+	int searchMatch(int beginDate, int endDate, std::string city, std::string state);
 
 };
+
 #endif

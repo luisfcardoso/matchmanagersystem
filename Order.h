@@ -15,11 +15,12 @@ class Order
 private:
 	int orderID;
 
-	Ticket boughtTickets[];
+	int boughtTickets[];
 
 
 public:
-	Ticket purchase(Customer customer, int matchID, int quantityTickets);
+	int purchase(Customer customer, int matchID, int quantityTickets);
+	bool checkTicketAvailability(int matchID);
 
 };
 #endif

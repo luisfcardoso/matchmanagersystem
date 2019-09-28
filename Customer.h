@@ -10,23 +10,28 @@
 class Customer
 {
 private:
-	string cpf;
+	std::string cpf;
 
-	string password;
+	std::string password;
 
-	int cardNumber;
+	std::string cardNumber;
 
-	int securityCode;
+	std::string securityCode;
 
-	int expirationDateCard;
+	std::string expirationDateCardMonth;
+
+	std::string expirationDateCardYear;
 
 
 public:
-	void register(string cpf, string password, string cardNumber, string securityCode, int expirationDateCard);
 
-	void authenticate(string cpf, char password);
+    Customer(std::string cpf, std::string password, std::string cardNumber, std::string securityCode, std::string expirationDateCardMonth, std::string expirationDateCardYear);
 
-	void unsubscribe(string cpf, char password);
+	std::string registerUser();
+
+	void authenticate(std::string cpf, std::string password);
+
+	void unsubscribe(std::string cpf, std::string password);
 
 };
 #endif

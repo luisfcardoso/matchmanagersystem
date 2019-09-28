@@ -7,16 +7,5 @@
 #include <iostream>
 #include <assert.h>
 
-class MatchType
-{
-public:
-	string Local;
 
-	string Estadual;
-
-	string Nacional;
-
-	string Internacional;
-
-};
 #endif

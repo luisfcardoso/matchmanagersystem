@@ -13,15 +13,21 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
+					<Add directory="../../../../Program Files (x86)/CodeBlocks/MinGW/include" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
+					<Add library="../../../../Program Files (x86)/CodeBlocks/MinGW/lib/libmysql.a" />
 				</Linker>
 			</Target>
 		</Build>
 		<Compiler>
 			<Add option="-Wall" />
+			<Add directory="C:/Program Files (x86)/CodeBlocks/MinGW/include" />
 		</Compiler>
+		<Linker>
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libmysql.a" />
+		</Linker>
 		<Unit filename="Customer.cpp" />
 		<Unit filename="Customer.h" />
 		<Unit filename="ManageMatch .cpp" />
@@ -38,6 +44,9 @@
 		<Unit filename="Order.h" />
 		<Unit filename="Ticket.cpp" />
 		<Unit filename="Ticket.h" />
+		<Unit filename="include/Date.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="src/Date.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />

@@ -7,12 +7,24 @@
 #include "MatchSales.h"
 
 
-string MatchSales::checkSalesCustomers(int matchID)
+std::string MatchSales::checkSalesCustomers(int matchID)
 {
-	return 0;
+    std::string customers;
+
+    // TO DO: do a select in the database to get the customers that made a purchase
+    // Input: MatchID
+    // Output: customer[]
+
+	return customers;
 }
 
 int MatchSales::checkSalesQuantity(int matchID)
 {
-	return 0;
+	int quantityOfSales;
+
+    // TO DO: do a select in the database to get the number of sales
+    // Input: MatchID
+    // Output: quantityOfSales
+
+	return quantityOfSales;
 }

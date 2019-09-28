@@ -14,9 +14,9 @@ class Ticket
 private:
 	int ticketID;
 
-	Match match;
+	int matchID;
 
-	boolean sold;
+	bool sold;
 
 };
 #endif

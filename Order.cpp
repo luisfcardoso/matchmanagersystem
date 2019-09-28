@@ -7,7 +7,11 @@
 #include "Order.h"
 
 
-Ticket Order::purchase(Customer customer, int matchID, int quantityTickets)
+int Order::purchase(Customer customer, int matchID, int quantityTickets)
 {
 	return 0;
+}
+
+bool checkTicketAvailability(int matchID) {
+    return false;
 }

@@ -10,6 +10,7 @@
 #include "Match.h"
 #include "Order.h"
 #include "Customer.h"
+using std::string;
 
 class MatchSales
 {
