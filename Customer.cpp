@@ -21,7 +21,7 @@ std::string Customer::registerUser()
     conn = mysql_init(0);
     conn = mysql_real_connect(conn, "192.168.25.143", "luis","123456","matchmanagersystem", 0, NULL, 0);
 
-    // TO DO:  Check if the inputs are in the right form
+    // TO DO:  Check if the inputs are in the right form and implement try-catch
     // Building query
     std::string query = "INSERT INTO customers (cpf, password, cardNumber, securityCode, expirationDateCardMonth, expirationDateCardYear) VALUES ('";
     query = query + this->cpf + "', '";
@@ -59,7 +59,7 @@ std::string Customer::authenticate()
     conn = mysql_init(0);
     conn = mysql_real_connect(conn, "192.168.25.143", "luis","123456","matchmanagersystem", 0, NULL, 0);
 
-    // TO DO:  Check if the inputs are in the right form
+    // TO DO:  Check if the inputs are in the right form and implement try-catch
     // Building query
     std::string query = "SELECT * FROM customers where cpf ='";
     query = query + this->cpf + "'";
@@ -98,7 +98,7 @@ std::string Customer::removeUser()
     conn = mysql_init(0);
     conn = mysql_real_connect(conn, "192.168.25.143", "luis","123456","matchmanagersystem", 0, NULL, 0);
 
-    // TO DO:  Check if the inputs are in the right form
+    // TO DO:  Check if the inputs are in the right form and implement try-catch
     // Building query
     std::string query = "DELETE FROM customers where cpf ='";
     query = query + this->cpf + "'";
