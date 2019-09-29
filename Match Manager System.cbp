@@ -44,9 +44,7 @@
 		<Unit filename="Order.h" />
 		<Unit filename="Ticket.cpp" />
 		<Unit filename="Ticket.h" />
-		<Unit filename="include/Date.h" />
 		<Unit filename="main.cpp" />
-		<Unit filename="src/Date.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />

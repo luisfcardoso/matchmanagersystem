@@ -27,6 +27,10 @@ public:
 
     Customer(std::string cpf, std::string password, std::string cardNumber, std::string securityCode, std::string expirationDateCardMonth, std::string expirationDateCardYear);
 
+    Customer(std::string cpf, std::string password);
+
+    Customer(std::string cpf);
+
 	std::string registerUser();
 
 	std::string authenticate();
