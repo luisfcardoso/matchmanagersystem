@@ -6,4 +6,12 @@
 
 #include "MatchManager.h"
 
+class MatchManager : public Customer
+{
+    public:
+        MatchManager(std::string cpf);
 
+        std::string registerMatchManager();
+
+        bool checkIfItIsAManager();
+};
