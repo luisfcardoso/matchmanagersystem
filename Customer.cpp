@@ -1,6 +1,5 @@
 #include <string>
 #include <iostream>
-#include <stdexcept>
 #include <windows.h>
 #include <mysql.h>
 #include <sstream>
@@ -200,11 +199,54 @@ std::string Customer::removeUser()
        if (qstate == 0) {
             return "The customer was removed successfully!";
        } else {
-            return "The customer wasn't removed! Please check the values you insert or if the customer exists." + query;
+            return "The customer wasn't removed! Please check the values you insert or if the customer exists.";
        }
     } else {
         return "The customer wasn't removed! The database is offline. Please try again later.";
     }
 
     return "The customer wasn't removed! Please try again later.";
+}
+
+bool Customer::checkIfItIsACustomer() {
+
+    // Connect to the database
+    MYSQL* conn;
+    MYSQL_ROW row;
+    MYSQL_RES* res;
+
+    conn = mysql_init(0);
+    conn = mysql_real_connect(conn, "192.168.25.143", "luis","123456","matchmanagersystem", 0, NULL, 0);
+
+    // Building query
+    std::string query = "SELECT * FROM customers where cpf ='";
+    query = query + this->getCPF() + "'";
+
+    // Commit query
+    int qstate = 0;
+
+    if (conn) {
+
+        const char* q = query.c_str();
+        qstate = mysql_query(conn, q);
+
+       if (qstate == 0) {
+
+            res = mysql_store_result(conn);
+
+            while((row = mysql_fetch_row(res))) {
+                if((row[0])) {
+                    return true;
+                } else {
+                    return false;
+                }
+            }
+       } else {
+           return false;
+       }
+    } else {
+        return false;
+    }
+    return false;
+
 }

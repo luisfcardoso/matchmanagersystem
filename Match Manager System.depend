@@ -25,33 +25,30 @@
 1569631882 c:\users\luis_\documents\matchmanagersystem\include\date.h
 	<string>
 
-1569783995 source:c:\users\luis_\documents\matchmanagersystem\main.cpp
+1569797888 source:c:\users\luis_\documents\matchmanagersystem\main.cpp
 	<string>
 	<iostream>
 	<windows.h>
 	<mysql.h>
 	<sstream>
 	"Customer.h"
-
-1569769320 c:\users\luis_\documents\matchmanagersystem\customer.h
-	<string>
-	<vector>
-	<list>
-	<iostream>
-	<assert.h>
-
-1569198247 source:c:\users\luis_\documents\matchmanagersystem\matchmanager.cpp
-	<string>
-	<vector>
-	<list>
-	<iostream>
-	<assert.h>
 	"MatchManager.h"
 
-1569198247 c:\users\luis_\documents\matchmanagersystem\matchmanager.h
+1569797389 c:\users\luis_\documents\matchmanagersystem\customer.h
 	<string>
-	<vector>
-	<list>
+	<iostream>
+	<assert.h>
+
+1569797926 source:c:\users\luis_\documents\matchmanagersystem\matchmanager.cpp
+	<string>
+	<iostream>
+	<windows.h>
+	<mysql.h>
+	<sstream>
+	"MatchManager.h"
+
+1569796631 c:\users\luis_\documents\matchmanagersystem\matchmanager.h
+	<string>
 	<iostream>
 	<assert.h>
 	"Customer.h"
@@ -370,10 +367,9 @@
 
 1569639801 c:\program files (x86)\codeblocks\mingw\include\my_alloc.h
 
-1569784405 source:c:\users\luis_\documents\matchmanagersystem\customer.cpp
+1569797854 source:c:\users\luis_\documents\matchmanagersystem\customer.cpp
 	<string>
 	<iostream>
-	<stdexcept>
 	<windows.h>
 	<mysql.h>
 	<sstream>
