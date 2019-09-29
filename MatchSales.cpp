@@ -20,7 +20,7 @@ std::string MatchSales::checkSalesCustomers(int matchID)
 
 int MatchSales::checkSalesQuantity(int matchID)
 {
-	int quantityOfSales;
+	int quantityOfSales = 0;
 
     // TO DO: do a select in the database to get the number of sales
     // Input: MatchID

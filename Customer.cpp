@@ -21,7 +21,8 @@ std::string Customer::registerUser()
     conn = mysql_init(0);
     conn = mysql_real_connect(conn, "192.168.25.143", "luis","123456","matchmanagersystem", 0, NULL, 0);
 
-    // Create connection and insert query
+    // TO DO:  Check if the inputs are in the right form
+    // Building query
     std::string query = "INSERT INTO customers (cpf, password, cardNumber, securityCode, expirationDateCardMonth, expirationDateCardYear) VALUES ('";
     query = query + this->cpf + "', '";
     query = query + this->password + "', '";
@@ -30,6 +31,7 @@ std::string Customer::registerUser()
     query = query + this->expirationDateCardMonth + "', '";
     query = query + this->expirationDateCardYear + "')";
 
+    // Commit query
     int qstate = 0;
 
     if (conn) {
@@ -37,30 +39,80 @@ std::string Customer::registerUser()
         qstate = mysql_query(conn, q);
 
        if (qstate == 0) {
-           return query;
+            return "The customer was registered successfully!";
        } else {
-            return "The customer wasn't registered! Please check the values you insert.";
+           return "The customer wasn't registered! Please check the values you insert or if the customer already exists.";
        }
     } else {
-       return "The customer wasn't registered! The database is offline. Please try again later.";
+        return "The customer wasn't registered! The database is offline. Please try again later.";
     }
 
-
-    return 0;
+    return "The customer wasn't registered! Please try again later.";
 }
 
-void Customer::authenticate(std::string cpf, std::string password)
+std::string Customer::authenticate(std::string cpf, std::string password)
 {
+    // Connect to the database
+    MYSQL* conn;
+    MYSQL_ROW row;
+    MYSQL_RES* res;
+    conn = mysql_init(0);
+    conn = mysql_real_connect(conn, "192.168.25.143", "luis","123456","matchmanagersystem", 0, NULL, 0);
 
-}
+    // TO DO:  Check if the inputs are in the right form
+    // Building query
+    std::string query = "SELECT * FROM customers where cpf ='";
+    query = query + cpf + "'";
 
-void Customer::unsubscribe(std::string cpf, std::string password)
-{
-    //TO DO: Delete customer register to the database method with cpf and password as the input
-    /*
-    if(if customer was removed in the database) {
-            return "Customer successfully removed!";
+    // Commit query
+    int qstate = 0;
+
+    if (conn) {
+        const char* q = query.c_str();
+        qstate = mysql_query(conn, q);
+
+       if (qstate == 0) {
+            res = mysql_store_result(conn);
+            row = mysql_fetch_row(res);
+            return row[0];
+       } else {
+           return "The customer wasn't registered! Please check the values you insert or if the customer already exists.";
+       }
     } else {
-        return "The customer cannot be removed. Please try again!";
-    } */
+        return "The customer wasn't registered! The database is offline. Please try again later.";
+    }
+
+    return "The customer wasn't registered! Please try again later.";
+
+}
+
+std::string Customer::removeUser(std::string cpf)
+{
+    // Connect to the database
+    MYSQL* conn;
+    conn = mysql_init(0);
+    conn = mysql_real_connect(conn, "192.168.25.143", "luis","123456","matchmanagersystem", 0, NULL, 0);
+
+    // TO DO:  Check if the inputs are in the right form
+    // Building query
+    std::string query = "DELETE FROM customers where cpf ='";
+    query = query + cpf + "'";
+
+    // Commit query
+    int qstate = 0;
+
+    if (conn) {
+        const char* q = query.c_str();
+        qstate = mysql_query(conn, q);
+
+       if (qstate == 0) {
+            return "The customer was removed successfully!";
+       } else {
+            return "The customer wasn't removed! Please check the values you insert or if the customer exists." + query;
+       }
+    } else {
+        return "The customer wasn't removed! The database is offline. Please try again later.";
+    }
+
+    return "The customer wasn't removed! Please try again later.";
 }

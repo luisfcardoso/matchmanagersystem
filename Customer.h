@@ -29,9 +29,9 @@ public:
 
 	std::string registerUser();
 
-	void authenticate(std::string cpf, std::string password);
+	std::string authenticate(std::string cpf, std::string password);
 
-	void unsubscribe(std::string cpf, std::string password);
+	std::string removeUser(std::string cpf);
 
 };
 #endif
