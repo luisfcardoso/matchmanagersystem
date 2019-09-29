@@ -10,10 +10,11 @@ using namespace std;
 
 int main()
 {
-    Customer customer1("1548555541","654648765","514","654","04","25");
+    Customer customer1("1548555542","654648765","514","654","04","25");
 
-    cout << customer1.authenticate("15485555411","asdfdafda") << endl;
     //cout << customer1.registerUser() <<endl;
+    //cout << customer1.removeUser() << endl;
+    cout << customer1.authenticate() << endl;
 
     return 0;
 }

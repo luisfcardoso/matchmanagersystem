@@ -25,7 +25,7 @@
 1569631882 c:\users\luis_\documents\matchmanagersystem\include\date.h
 	<string>
 
-1569687276 source:c:\users\luis_\documents\matchmanagersystem\main.cpp
+1569727294 source:c:\users\luis_\documents\matchmanagersystem\main.cpp
 	<string>
 	<iostream>
 	<windows.h>
@@ -33,7 +33,7 @@
 	<sstream>
 	"Customer.h"
 
-1569687434 c:\users\luis_\documents\matchmanagersystem\customer.h
+1569727042 c:\users\luis_\documents\matchmanagersystem\customer.h
 	<string>
 	<vector>
 	<list>
@@ -370,7 +370,7 @@
 
 1569639801 c:\program files (x86)\codeblocks\mingw\include\my_alloc.h
 
-1569686174 source:c:\users\luis_\documents\matchmanagersystem\customer.cpp
+1569728268 source:c:\users\luis_\documents\matchmanagersystem\customer.cpp
 	<iostream>
 	<windows.h>
 	<mysql.h>

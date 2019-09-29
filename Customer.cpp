@@ -50,7 +50,7 @@ std::string Customer::registerUser()
     return "The customer wasn't registered! Please try again later.";
 }
 
-std::string Customer::authenticate(std::string cpf, std::string password)
+std::string Customer::authenticate()
 {
     // Connect to the database
     MYSQL* conn;
@@ -62,7 +62,7 @@ std::string Customer::authenticate(std::string cpf, std::string password)
     // TO DO:  Check if the inputs are in the right form
     // Building query
     std::string query = "SELECT * FROM customers where cpf ='";
-    query = query + cpf + "'";
+    query = query + this->cpf + "'";
 
     // Commit query
     int qstate = 0;
@@ -74,19 +74,24 @@ std::string Customer::authenticate(std::string cpf, std::string password)
        if (qstate == 0) {
             res = mysql_store_result(conn);
             row = mysql_fetch_row(res);
-            return row[0];
+
+            if(row[1] == this->password) {
+                return "You logged in!";
+            } else {
+                return "You weren't log in! Please check the cpf and the password.";
+            }
        } else {
-           return "The customer wasn't registered! Please check the values you insert or if the customer already exists.";
+           return "You weren't log in! Please check the cpf and the password.";
        }
     } else {
-        return "The customer wasn't registered! The database is offline. Please try again later.";
+        return "You weren't log in! Please try again later. The database is offline.";
     }
 
-    return "The customer wasn't registered! Please try again later.";
+    return "You weren't log in! Please try again later.";
 
 }
 
-std::string Customer::removeUser(std::string cpf)
+std::string Customer::removeUser()
 {
     // Connect to the database
     MYSQL* conn;
@@ -96,7 +101,7 @@ std::string Customer::removeUser(std::string cpf)
     // TO DO:  Check if the inputs are in the right form
     // Building query
     std::string query = "DELETE FROM customers where cpf ='";
-    query = query + cpf + "'";
+    query = query + this->cpf + "'";
 
     // Commit query
     int qstate = 0;
