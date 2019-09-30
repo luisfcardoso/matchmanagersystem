@@ -11,7 +11,7 @@
 Match::Match() {
 }
 
-void Match::searchMatch(int beginDay, int beginMonth, int beginYear, int endDay, int endMonth, int endYear, std::string city, std::string state)
+bool Match::searchMatch(int beginDay, int beginMonth, int beginYear, int endDay, int endMonth, int endYear, std::string city, std::string state)
 {
     if((beginDay != 0) || (beginMonth != 0) || (beginYear != 0) || (endDay != 0) || (endMonth != 0) || (endYear != 0) || (city != "") || (state != "")) {
 
@@ -69,13 +69,20 @@ void Match::searchMatch(int beginDay, int beginMonth, int beginYear, int endDay,
                     std::cout << "\t";
                     std::cout << row[10];
                 }
+
+                return true;
             }
 
         } else {
            std::cout << "Please try again later. Database is offline.";
+
+           return false;
         }
     } else {
         std::cout << "Please, fill out all fields.";
+
+        return false;
     }
 
+    return false;
 }

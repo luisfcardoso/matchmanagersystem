@@ -22,7 +22,7 @@ int main()
         cout << manager1.authenticate() << endl;
         cout << manager1.registerMatchManager() << endl;
 
-        return UnitTest::RunAllTests();
+        //return UnitTest::RunAllTests();
 
     } catch (string e) {
         cout << e << endl;

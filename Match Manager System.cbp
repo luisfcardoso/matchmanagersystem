@@ -32,9 +32,8 @@
 		</Linker>
 		<Unit filename="Customer.cpp" />
 		<Unit filename="Customer.h" />
-		<Unit filename="CustomerTest.cpp" />
-		<Unit filename="ManageMatch .cpp" />
-		<Unit filename="ManageMatch .h" />
+		<Unit filename="ManageMatch.cpp" />
+		<Unit filename="ManageMatch.h" />
 		<Unit filename="Match.cpp" />
 		<Unit filename="Match.h" />
 		<Unit filename="MatchManager.cpp" />
@@ -48,7 +47,6 @@
 		<Unit filename="Ticket.cpp" />
 		<Unit filename="Ticket.h" />
 		<Unit filename="main.cpp" />
-		<Unit filename="maintest.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />
