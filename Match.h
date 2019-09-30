@@ -15,7 +15,15 @@ class Match
 private:
 	int matchID;
 
-	std::string time;
+	int hour;
+
+	int minute;
+
+	int day;
+
+	int month;
+
+	int year;
 
 	float ticketPrice;
 
@@ -25,15 +33,15 @@ private:
 
 	std::string state;
 
-	MatchManager owner;
+	std::string ownerCPF;
 
-	int matchType;
+	std::string teamA;
 
-	std::string teams[];
+	std::string teamB;
 
-	int tickets[];
+	int quantityOfSales;
 
-	std::string name;
+	std::string description;
 
 	enum MatchType {
         Local,
@@ -43,7 +51,10 @@ private:
     };
 
 public:
-	int searchMatch(int beginDate, int endDate, std::string city, std::string state);
+
+    Match(int hour, int minute, int day, int month, int year, float ticketPrice, std::string stadiumName, std::string city, std::string state, std::string ownerCPF, std::string teamA, std::string teamB, int quantityOfSales, std::string description);
+
+	int searchMatch(int beginDay, int beginMonth, int beginYear, int endDay, int endMonth, int endYear, int endDate, std::string city, std::string state);
 
 };
 
