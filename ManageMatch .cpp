@@ -9,6 +9,7 @@
 
 std::string ManageMatch ::addMatch(std::string name, std::string time, float ticketPrice, std::string stadiumName, std::string city, std::string state, MatchManager owner, int matchType, std::string teams[], int numberOfTickets)
 {
+
 	return 0;
 }
 

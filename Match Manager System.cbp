@@ -30,6 +30,7 @@
 		</Linker>
 		<Unit filename="Customer.cpp" />
 		<Unit filename="Customer.h" />
+		<Unit filename="CustomerTest.cpp" />
 		<Unit filename="ManageMatch .cpp" />
 		<Unit filename="ManageMatch .h" />
 		<Unit filename="Match.cpp" />
@@ -44,7 +45,10 @@
 		<Unit filename="Order.h" />
 		<Unit filename="Ticket.cpp" />
 		<Unit filename="Ticket.h" />
+		<Unit filename="include/Date.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="maintest.cpp" />
+		<Unit filename="src/Date.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />
