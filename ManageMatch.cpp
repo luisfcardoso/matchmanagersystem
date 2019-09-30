@@ -4,8 +4,7 @@
 #include <iostream>
 #include <assert.h>
 
-#include "ManageMatch .h"
-
+#include "ManageMatch.h"
 
 std::string ManageMatch ::addMatch(std::string name, std::string time, float ticketPrice, std::string stadiumName, std::string city, std::string state, MatchManager owner, int matchType, std::string teams[], int numberOfTickets)
 {

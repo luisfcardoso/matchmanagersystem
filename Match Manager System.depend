@@ -25,13 +25,14 @@
 1569631882 c:\users\luis_\documents\matchmanagersystem\include\date.h
 	<string>
 
-1569803498 source:c:\users\luis_\documents\matchmanagersystem\main.cpp
+1569804131 source:c:\users\luis_\documents\matchmanagersystem\main.cpp
 	<string>
 	<iostream>
 	<windows.h>
 	<sstream>
 	"Customer.h"
 	"MatchManager.h"
+	"UnitTest++.h"
 
 1569797389 c:\users\luis_\documents\matchmanagersystem\customer.h
 	<string>
@@ -46,21 +47,23 @@
 	<sstream>
 	"MatchManager.h"
 
-1569796631 c:\users\luis_\documents\matchmanagersystem\matchmanager.h
+1569809517 c:\users\luis_\documents\matchmanagersystem\matchmanager.h
 	<string>
 	<iostream>
 	<assert.h>
 	"Customer.h"
 
-1569803874 source:c:\users\luis_\documents\matchmanagersystem\match.cpp
-	<string>
-	<vector>
-	<list>
+1569810107 source:c:\users\luis_\documents\matchmanagersystem\match.cpp
 	<iostream>
-	<assert.h>
+	<windows.h>
+	<iomanip>
+	<locale>
+	<mysql.h>
+	<sstream>
+	<string>
 	"Match.h"
 
-1569799197 c:\users\luis_\documents\matchmanagersystem\match.h
+1569810113 c:\users\luis_\documents\matchmanagersystem\match.h
 	<string>
 	<vector>
 	<list>
@@ -531,4 +534,21 @@
 1569803847 source:c:\users\luis_\documents\matchmanagersystem\customertest.cpp
 	"UnitTest++.h"
 	"Customer.h"
+
+1569810182 source:c:\users\luis_\documents\matchmanagersystem\managematch.cpp
+	<string>
+	<vector>
+	<list>
+	<iostream>
+	<assert.h>
+	"ManageMatch.h"
+
+1569810152 c:\users\luis_\documents\matchmanagersystem\managematch.h
+	<string>
+	<vector>
+	<list>
+	<iostream>
+	<assert.h>
+	"Match.h"
+	"MatchManager.h"
 

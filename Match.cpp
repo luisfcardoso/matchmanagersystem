@@ -1,65 +1,81 @@
-#include <string>
-#include <vector>
-#include <list>
 #include <iostream>
-#include <assert.h>
+#include <windows.h>
+#include <iomanip>
+#include <locale>
+#include <mysql.h>
+#include <sstream>
+#include <string>
 
 #include "Match.h"
 
-
-Match::Match(int hour, int minute, int day, int month, int year, float ticketPrice, std::string stadiumName, std::string city, std::string state, std::string ownerCPF, std::string teamA, std::string teamB, int quantityOfSales, std::string description) {
-
-    if(hour<24) {
-        this->hour= hour;
-    } else {
-        std::string error = "Hour must have 2 characters, have just numbers and be less than 24.";
-        throw error;
-    }
-
-    if(minute<60) {
-        this->minute= minute;
-    } else {
-        std::string error = "Minute must have 2 characters, have just numbers and be less than 60.";
-        throw error;
-    }
-
-    if(day<32) {
-        this->day= day;
-    } else {
-        std::string error = "Day must have 2 characters, have just numbers and be less than 32.";
-        throw error;
-    }
-
-    if(month<13) {
-        this->month= month;
-    } else {
-        std::string error = "Month must have 2 characstadiumNameters, have just numbers and be less than 12.";
-        throw error;
-    }
-
-    if((year>2018) && (year<2050)) {
-        this->year= year;
-    } else {
-        std::string error = "Year must have 4 characters, have just numbers and be between 2019 and 2050.";
-        throw error;
-    }
-
-    if(ticketPrice>=0.0) {
-        this->ticketPrice= ticketPrice;
-    } else {
-        std::string error = "The ticket price must be greater than 0.";
-        throw error;
-    }
-
-    if(stadiumName!="") {
-        this->stadiumName= stadiumName;
-    } else {
-        std::string error = "Please insert the stadium name.";
-        throw error;
-    }
+Match::Match() {
 }
 
-int Match::searchMatch(int beginDay, int beginMonth, int beginYear, int endDay, int endMonth, int endYear, int endDate, std::string city, std::string state)
+void Match::searchMatch(int beginDay, int beginMonth, int beginYear, int endDay, int endMonth, int endYear, std::string city, std::string state)
 {
-	return 0;
+    if((beginDay != 0) || (beginMonth != 0) || (beginYear != 0) || (endDay != 0) || (endMonth != 0) || (endYear != 0) || (city != "") || (state != "")) {
+
+        MYSQL* conn;
+        MYSQL_ROW row;
+        MYSQL_RES* res;
+        conn = mysql_init(0);
+        conn = mysql_real_connect(conn, "192.168.25.143", "luis","123456","matchmanagersystem", 0, NULL, 0);
+
+        if (conn) {
+            std::ostringstream beginDateStream;
+            beginDateStream << beginYear << "-" << beginMonth << "-" << beginDay << " 00:00:00";
+
+            std::ostringstream endDateStream;
+            endDateStream << endYear << "-" << endMonth << "-" << endDay << " 00:00:00";
+
+            std::string beginDate = beginDateStream.str();
+            std::string endDate = endDateStream.str();
+
+            std::string query = "SELECT * FROM matches where date > '";
+            query = query + beginDate + "' and date < '";
+            query = query + endDate + "' and city = '" + city;
+            query = query + "' and state = '" + state + "'";
+
+            const char* q = query.c_str();
+            int qstate = mysql_query(conn,q);
+
+           if (!qstate) {
+                res = mysql_store_result(conn);
+
+                std::cout << "\t Date";
+                std::cout << "\t Stadium Name";
+                std::cout << "\t City";
+                std::cout << "\t State";
+                std::cout << "\t Team A";
+                std::cout << "\t Team B";
+                std::cout << "\t Ticket Price";
+                std::cout << "\t Description" << std::endl;
+
+                while ((row = mysql_fetch_row(res))) {
+
+                    std::cout << row[1];
+                    std::cout << "\t";
+                    std::cout << row[2];
+                    std::cout << "\t";
+                    std::cout << row[3];
+                    std::cout << "\t";
+                    std::cout << row[4];
+                    std::cout << "\t";
+                    std::cout << row[6];
+                    std::cout << "\t";
+                    std::cout << row[7];
+                    std::cout << "\t";
+                    std::cout << row[8];
+                    std::cout << "\t";
+                    std::cout << row[10];
+                }
+            }
+
+        } else {
+           std::cout << "Please try again later. Database is offline.";
+        }
+    } else {
+        std::cout << "Please, fill out all fields.";
+    }
+
 }
