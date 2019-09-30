@@ -59,7 +59,7 @@ Match::Match(int hour, int minute, int day, int month, int year, float ticketPri
     }
 }
 
-int Match::searchMatch(int beginDate, int endDate, std::string city, std::string state)
+int Match::searchMatch(int beginDay, int beginMonth, int beginYear, int endDay, int endMonth, int endYear, int endDate, std::string city, std::string state)
 {
 	return 0;
 }

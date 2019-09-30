@@ -1,11 +1,11 @@
 #include <string>
 #include <iostream>
 #include <windows.h>
-#include <mysql.h>
 #include <sstream>
 
 #include "Customer.h"
 #include "MatchManager.h"
+#include "UnitTest++.h"
 
 using namespace std;
 
@@ -21,6 +21,9 @@ int main()
         MatchManager manager1("15485555411","123456789123456");
         cout << manager1.authenticate() << endl;
         cout << manager1.registerMatchManager() << endl;
+
+        return UnitTest::RunAllTests();
+
     } catch (string e) {
         cout << e << endl;
     }

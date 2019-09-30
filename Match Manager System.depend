@@ -25,11 +25,10 @@
 1569631882 c:\users\luis_\documents\matchmanagersystem\include\date.h
 	<string>
 
-1569797888 source:c:\users\luis_\documents\matchmanagersystem\main.cpp
+1569803498 source:c:\users\luis_\documents\matchmanagersystem\main.cpp
 	<string>
 	<iostream>
 	<windows.h>
-	<mysql.h>
 	<sstream>
 	"Customer.h"
 	"MatchManager.h"
@@ -53,7 +52,7 @@
 	<assert.h>
 	"Customer.h"
 
-1569632177 source:c:\users\luis_\documents\matchmanagersystem\match.cpp
+1569803874 source:c:\users\luis_\documents\matchmanagersystem\match.cpp
 	<string>
 	<vector>
 	<list>
@@ -61,7 +60,7 @@
 	<assert.h>
 	"Match.h"
 
-1569636845 c:\users\luis_\documents\matchmanagersystem\match.h
+1569799197 c:\users\luis_\documents\matchmanagersystem\match.h
 	<string>
 	<vector>
 	<list>
@@ -78,7 +77,7 @@
 	<assert.h>
 	"Match.h"
 
-1569637572 source:c:\users\luis_\documents\matchmanagersystem\managematch .cpp
+1569802725 source:c:\users\luis_\documents\matchmanagersystem\managematch .cpp
 	<string>
 	<vector>
 	<list>
@@ -130,7 +129,7 @@
 	<assert.h>
 	"Ticket.h"
 
-1569635109 source:c:\users\luis_\documents\matchmanagersystem\order.cpp
+1569803847 source:c:\users\luis_\documents\matchmanagersystem\order.cpp
 	<string>
 	<vector>
 	<list>
@@ -373,5 +372,163 @@
 	<windows.h>
 	<mysql.h>
 	<sstream>
+	"Customer.h"
+
+1569802725 source:c:\users\luis_\documents\matchmanagersystem\maintest.cpp
+	"UnitTest++.h"
+
+1569802800 c:\users\luis_\documents\matchmanagersystem\unittest++\unittest++.h
+	"UnitTestPP.h"
+
+1569802800 c:\users\luis_\documents\matchmanagersystem\unittest++\unittestpp.h
+	"Config.h"
+	"TestMacros.h"
+	"CheckMacros.h"
+	"RequireMacros.h"
+	"TestRunner.h"
+	"TimeConstraint.h"
+	"ReportAssert.h"
+
+1569802799 c:\users\luis_\documents\matchmanagersystem\unittest++\config.h
+
+1569802799 c:\users\luis_\documents\matchmanagersystem\unittest++\testmacros.h
+	"Config.h"
+	"TestSuite.h"
+	"ExceptionMacros.h"
+	"ExecuteTest.h"
+	"AssertException.h"
+	"TestDetails.h"
+	"MemoryOutStream.h"
+	"Posix/SignalTranslator.h"
+
+1569802799 c:\users\luis_\documents\matchmanagersystem\unittest++\testsuite.h
+
+1569802799 c:\users\luis_\documents\matchmanagersystem\unittest++\exceptionmacros.h
+	"Config.h"
+
+1569802799 c:\users\luis_\documents\matchmanagersystem\unittest++\executetest.h
+	"Config.h"
+	"ExceptionMacros.h"
+	"TestDetails.h"
+	"TestResults.h"
+	"MemoryOutStream.h"
+	"AssertException.h"
+	"RequiredCheckException.h"
+	"CurrentTest.h"
+	"ReportAssertImpl.h"
+	"Posix/SignalTranslator.h"
+
+1569802799 c:\users\luis_\documents\matchmanagersystem\unittest++\testdetails.h
+	"HelperMacros.h"
+
+1569802799 c:\users\luis_\documents\matchmanagersystem\unittest++\helpermacros.h
+	"Config.h"
+
+1569802799 c:\users\luis_\documents\matchmanagersystem\unittest++\testresults.h
+	"HelperMacros.h"
+
+1569802799 c:\users\luis_\documents\matchmanagersystem\unittest++\memoryoutstream.h
+	"Config.h"
+	"HelperMacros.h"
+	<sstream>
+	<cstddef>
+
+1569802798 c:\users\luis_\documents\matchmanagersystem\unittest++\assertexception.h
+	"Config.h"
+	"HelperMacros.h"
+	<exception>
+
+1569802799 c:\users\luis_\documents\matchmanagersystem\unittest++\requiredcheckexception.h
+	"Config.h"
+	"HelperMacros.h"
+	<exception>
+
+1569802799 c:\users\luis_\documents\matchmanagersystem\unittest++\currenttest.h
+	"HelperMacros.h"
+
+1569802799 c:\users\luis_\documents\matchmanagersystem\unittest++\reportassertimpl.h
+	"Config.h"
+	"HelperMacros.h"
+	<csetjmp>
+
+1569802800 c:\users\luis_\documents\matchmanagersystem\unittest++\posix\signaltranslator.h
+	<setjmp.h>
+	<signal.h>
+
+1341006776 c:\program files (x86)\codeblocks\mingw\include\setjmp.h
+	<_mingw.h>
+
+1341006776 c:\program files (x86)\codeblocks\mingw\include\signal.h
+	<_mingw.h>
+
+1569802798 c:\users\luis_\documents\matchmanagersystem\unittest++\checkmacros.h
+	"HelperMacros.h"
+	"ExceptionMacros.h"
+	"Checks.h"
+	"AssertException.h"
+	"RequiredCheckException.h"
+	"MemoryOutStream.h"
+	"TestDetails.h"
+	"CurrentTest.h"
+	"ReportAssertImpl.h"
+
+1569802798 c:\users\luis_\documents\matchmanagersystem\unittest++\checks.h
+	"Config.h"
+	"TestResults.h"
+	"MemoryOutStream.h"
+
+1569802799 c:\users\luis_\documents\matchmanagersystem\unittest++\requiremacros.h
+	"RequiredCheckTestReporter.h"
+
+1569802799 c:\users\luis_\documents\matchmanagersystem\unittest++\requiredchecktestreporter.h
+	"HelperMacros.h"
+	"ThrowingTestReporter.h"
+
+1569802799 c:\users\luis_\documents\matchmanagersystem\unittest++\throwingtestreporter.h
+	"TestReporter.h"
+
+1569802799 c:\users\luis_\documents\matchmanagersystem\unittest++\testreporter.h
+	"HelperMacros.h"
+
+1569802799 c:\users\luis_\documents\matchmanagersystem\unittest++\testrunner.h
+	"Test.h"
+	"TestList.h"
+	"CurrentTest.h"
+
+1569802799 c:\users\luis_\documents\matchmanagersystem\unittest++\test.h
+	"TestDetails.h"
+
+1569802799 c:\users\luis_\documents\matchmanagersystem\unittest++\testlist.h
+	"HelperMacros.h"
+
+1569802800 c:\users\luis_\documents\matchmanagersystem\unittest++\timeconstraint.h
+	"TimeHelpers.h"
+	"HelperMacros.h"
+	"TestDetails.h"
+
+1569802800 c:\users\luis_\documents\matchmanagersystem\unittest++\timehelpers.h
+	"Config.h"
+	"Posix/TimeHelpers.h"
+	"Win32/TimeHelpers.h"
+
+1569802800 c:\users\luis_\documents\matchmanagersystem\unittest++\posix\timehelpers.h
+	<sys/time.h>
+
+1341006780 c:\program files (x86)\codeblocks\mingw\include\sys\time.h
+	<time.h>
+
+1341006776 c:\program files (x86)\codeblocks\mingw\include\time.h
+	<_mingw.h>
+	<stddef.h>
+
+1569802800 c:\users\luis_\documents\matchmanagersystem\unittest++\win32\timehelpers.h
+	"../Config.h"
+	"../HelperMacros.h"
+
+1569802799 c:\users\luis_\documents\matchmanagersystem\unittest++\reportassert.h
+	"HelperMacros.h"
+
+1569803847 source:c:\users\luis_\documents\matchmanagersystem\customertest.cpp
+	"UnitTest++.h"
 	"Customer.h"
 

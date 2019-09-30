@@ -9,10 +9,10 @@
 
 int Order::purchase(Customer customer, int matchID, int quantityTickets)
 {
-    //connect db
+    /*//connect db
     MYSQL* conn;
     conn = mysql_init(0);
-    conn = mysql_real_connect(conn, "192.168.25.143", "luis","123456","matchmanagersystem", 0, NULL, 0);
+    conn = mysql_real_connect(conn, "192.168.25.143", "luis","123456","matchmanagersystem", 0, NULL, 0); */
 
 
 
