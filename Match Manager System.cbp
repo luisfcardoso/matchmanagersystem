@@ -14,12 +14,10 @@
 				<Compiler>
 					<Add option="-O2" />
 					<Add directory="../../../../Program Files (x86)/CodeBlocks/MinGW/include" />
-					<Add directory="UnitTest++" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
 					<Add library="../../../../Program Files (x86)/CodeBlocks/MinGW/lib/libmysql.a" />
-					<Add library="Deliv/Release/libUnitTest++.a" />
 				</Linker>
 			</Target>
 		</Build>
@@ -32,8 +30,8 @@
 		</Linker>
 		<Unit filename="Customer.cpp" />
 		<Unit filename="Customer.h" />
-		<Unit filename="ManageMatch.cpp" />
-		<Unit filename="ManageMatch.h" />
+		<Unit filename="ManageMatch .cpp" />
+		<Unit filename="ManageMatch .h" />
 		<Unit filename="Match.cpp" />
 		<Unit filename="Match.h" />
 		<Unit filename="MatchManager.cpp" />
