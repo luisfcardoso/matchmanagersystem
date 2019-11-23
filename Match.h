@@ -15,15 +15,7 @@ class Match
 private:
 	int matchID;
 
-	int hour;
-
-	int minute;
-
-	int day;
-
-	int month;
-
-	int year;
+	std::string time;
 
 	float ticketPrice;
 
@@ -33,15 +25,15 @@ private:
 
 	std::string state;
 
-	std::string ownerCPF;
+	MatchManager owner;
 
-	std::string teamA;
+	int matchType;
 
-	std::string teamB;
+	std::string teams[];
 
-	int quantityOfSales;
+	int tickets[];
 
-	std::string description;
+	std::string name;
 
 	enum MatchType {
         Local,
@@ -51,6 +43,7 @@ private:
     };
 
 public:
+<<<<<<< HEAD
 
     Match();
 
@@ -69,6 +62,9 @@ public:
 	std::string getSecurityCode() { return securityCode; }
 	std::string getExpirationDateCardMonth() { return expirationDateCardMonth; }
 	std::string getExpirationDateCardYear() { return expirationDateCardYear; } */
+=======
+	int searchMatch(int beginDate, int endDate, std::string city, std::string state);
+>>>>>>> parent of 0829583... Update match class
 
 };
 
