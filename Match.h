@@ -44,6 +44,7 @@ private:
 
 public:
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     Match();
 
@@ -62,6 +63,9 @@ public:
 	std::string getSecurityCode() { return securityCode; }
 	std::string getExpirationDateCardMonth() { return expirationDateCardMonth; }
 	std::string getExpirationDateCardYear() { return expirationDateCardYear; } */
+=======
+	int searchMatch(int beginDate, int endDate, std::string city, std::string state);
+>>>>>>> parent of 0829583... Update match class
 =======
 	int searchMatch(int beginDate, int endDate, std::string city, std::string state);
 >>>>>>> parent of 0829583... Update match class

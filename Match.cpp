@@ -12,6 +12,7 @@ Match::Match() {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 bool Match::searchMatch(int beginDay, int beginMonth, int beginYear, int endDay, int endMonth, int endYear, std::string city, std::string state)
 {
     if((beginDay != 0) || (beginMonth != 0) || (beginYear != 0) || (endDay != 0) || (endMonth != 0) || (endYear != 0) || (city != "") || (state != "")) {
@@ -87,6 +88,8 @@ bool Match::searchMatch(int beginDay, int beginMonth, int beginYear, int endDay,
 
     return false;
 =======
+=======
+>>>>>>> parent of 0829583... Update match class
 int Match::searchMatch(int beginDate, int endDate, std::string city, std::string state)
 {
 	return 0;
