@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SearchAndBuy</class>
+ <widget class="QDialog" name="SearchAndBuy">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>603</width>
+    <height>381</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>0</y>
+     <width>311</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Pesquisa de Partidas e Compra de Ingressos</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tableWidget">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>140</y>
+     <width>256</width>
+     <height>192</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QWidget" name="gridLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>50</y>
+     <width>321</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="1" column="1">
+     <widget class="QDateEdit" name="dateEdit_2"/>
+    </item>
+    <item row="0" column="2">
+     <widget class="QLabel" name="label_4">
+      <property name="text">
+       <string>Nome da Cidade</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLabel" name="label_3">
+      <property name="text">
+       <string>Data de Fim</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QDateEdit" name="dateEdit"/>
+    </item>
+    <item row="1" column="2">
+     <widget class="QLineEdit" name="lineEdit"/>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLabel" name="label_2">
+      <property name="text">
+       <string>Data de Início</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="3">
+     <widget class="QComboBox" name="comboBox">
+      <item>
+       <property name="text">
+        <string>AC</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>AL</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>AP</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>AM</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>BA</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>CE</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>DF</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>ES</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>GO</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>MA</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>MT</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>MS</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>MG</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>PA</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>PB</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>PR</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>PE</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>PI</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>RJ</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>RN</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>RS</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>RO</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>RR</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>SC</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>SP</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>SE</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TO</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="0" column="3">
+     <widget class="QLabel" name="label_5">
+      <property name="text">
+       <string>Estado</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
