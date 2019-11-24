@@ -15,6 +15,9 @@ public:
     explicit SearchAndBuy(QWidget *parent = nullptr);
     ~SearchAndBuy();
 
+private slots:
+    void on_btn_return_clicked();
+
 private:
     Ui::SearchAndBuy *ui;
 };

@@ -12,3 +12,8 @@ SearchAndBuy::~SearchAndBuy()
 {
     delete ui;
 }
+
+void SearchAndBuy::on_btn_return_clicked()
+{
+    SearchAndBuy::close();
+}

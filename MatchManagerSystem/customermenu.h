@@ -18,6 +18,8 @@ public:
 private slots:
     void on_btn_close_customer_menu_clicked();
 
+    void on_btn_search_buy_clicked();
+
 private:
     Ui::CustomerMenu *ui;
 };

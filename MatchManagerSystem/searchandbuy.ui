@@ -13,26 +13,36 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QLabel" name="label">
+  <widget class="QLabel" name="title_search">
    <property name="geometry">
     <rect>
-     <x>180</x>
-     <y>0</y>
-     <width>311</width>
+     <x>0</x>
+     <y>10</y>
+     <width>601</width>
      <height>31</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
    </property>
    <property name="text">
     <string>Pesquisa de Partidas e Compra de Ingressos</string>
    </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
   </widget>
-  <widget class="QTableWidget" name="tableWidget">
+  <widget class="QTableWidget" name="table_match">
    <property name="geometry">
     <rect>
-     <x>40</x>
-     <y>140</y>
-     <width>256</width>
-     <height>192</height>
+     <x>20</x>
+     <y>120</y>
+     <width>561</width>
+     <height>211</height>
     </rect>
    </property>
   </widget>
@@ -40,44 +50,68 @@
    <property name="geometry">
     <rect>
      <x>20</x>
-     <y>50</y>
-     <width>321</width>
-     <height>80</height>
+     <y>60</y>
+     <width>561</width>
+     <height>51</height>
     </rect>
    </property>
    <layout class="QGridLayout" name="gridLayout">
     <item row="1" column="1">
-     <widget class="QDateEdit" name="dateEdit_2"/>
+     <widget class="QDateEdit" name="date_end"/>
     </item>
     <item row="0" column="2">
-     <widget class="QLabel" name="label_4">
+     <widget class="QLabel" name="lb_city">
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
       <property name="text">
        <string>Nome da Cidade</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
       </property>
      </widget>
     </item>
     <item row="0" column="1">
-     <widget class="QLabel" name="label_3">
+     <widget class="QLabel" name="lb_end">
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
       <property name="text">
        <string>Data de Fim</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="3">
+     <widget class="QLabel" name="lb_state">
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Estado</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
       </property>
      </widget>
     </item>
     <item row="1" column="0">
-     <widget class="QDateEdit" name="dateEdit"/>
-    </item>
-    <item row="1" column="2">
-     <widget class="QLineEdit" name="lineEdit"/>
-    </item>
-    <item row="0" column="0">
-     <widget class="QLabel" name="label_2">
-      <property name="text">
-       <string>Data de Início</string>
-      </property>
-     </widget>
+     <widget class="QDateEdit" name="date_begin"/>
     </item>
     <item row="1" column="3">
-     <widget class="QComboBox" name="comboBox">
+     <widget class="QComboBox" name="cb_state">
       <item>
        <property name="text">
         <string>AC</string>
@@ -215,16 +249,57 @@
       </item>
      </widget>
     </item>
-    <item row="0" column="3">
-     <widget class="QLabel" name="label_5">
+    <item row="1" column="2">
+     <widget class="QLineEdit" name="line_city"/>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLabel" name="lb_begin">
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
       <property name="text">
-       <string>Estado</string>
+       <string>Data de Início</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="4">
+     <widget class="QPushButton" name="btn_search">
+      <property name="text">
+       <string>Pesquisar</string>
       </property>
      </widget>
     </item>
    </layout>
   </widget>
+  <widget class="QPushButton" name="btn_return">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>340</y>
+     <width>111</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Voltar</string>
+   </property>
+  </widget>
  </widget>
+ <tabstops>
+  <tabstop>date_begin</tabstop>
+  <tabstop>date_end</tabstop>
+  <tabstop>line_city</tabstop>
+  <tabstop>cb_state</tabstop>
+  <tabstop>btn_search</tabstop>
+  <tabstop>table_match</tabstop>
+  <tabstop>btn_return</tabstop>
+ </tabstops>
  <resources/>
  <connections/>
 </ui>
