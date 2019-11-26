@@ -20,6 +20,8 @@ private slots:
 
     void on_btn_search_buy_clicked();
 
+    void on_btn_delete_user_clicked();
+
 private:
     Ui::CustomerMenu *ui;
 };

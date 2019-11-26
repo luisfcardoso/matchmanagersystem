@@ -1,6 +1,8 @@
 #include "customermenu.h"
 #include "ui_customermenu.h"
 #include "searchandbuy.h"
+#include "dbusers.h"
+#include "deleteuserform.h"
 
 CustomerMenu::CustomerMenu(QWidget *parent) :
     QDialog(parent),
@@ -23,4 +25,10 @@ void CustomerMenu::on_btn_search_buy_clicked()
 {
     SearchAndBuy searchandbuyscreen;
     searchandbuyscreen.exec();
+}
+
+void CustomerMenu::on_btn_delete_user_clicked()
+{
+    DeleteUserForm deleteUserScreen;
+    deleteUserScreen.exec();
 }

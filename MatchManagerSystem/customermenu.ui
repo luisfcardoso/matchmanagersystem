@@ -67,7 +67,7 @@
        </widget>
       </item>
       <item row="1" column="0">
-       <widget class="QPushButton" name="btn_update">
+       <widget class="QPushButton" name="btn_delete_user">
         <property name="minimumSize">
          <size>
           <width>0</width>
@@ -86,7 +86,7 @@
          </font>
         </property>
         <property name="text">
-         <string>Atualizar e Excluir Cadastro</string>
+         <string>Excluir Cadastro</string>
         </property>
        </widget>
       </item>
@@ -139,7 +139,7 @@ Comprar Ingressos</string>
  <tabstops>
   <tabstop>btn_search_buy</tabstop>
   <tabstop>btn_bought_tickets</tabstop>
-  <tabstop>btn_update</tabstop>
+  <tabstop>btn_delete_user</tabstop>
   <tabstop>btn_close_customer_menu</tabstop>
  </tabstops>
  <resources/>

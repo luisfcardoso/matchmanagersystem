@@ -1,0 +1,14 @@
+release/main.o
+release/customermenu.o
+release/login.o
+release/register.o
+release/searchandbuy.o
+release/.o
+release/connection.o
+release/dbusers.o
+release/.o
+release/users.o
+release/moc_customermenu.o
+release/moc_login.o
+release/moc_register.o
+release/moc_searchandbuy.o

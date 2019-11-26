@@ -1,0 +1,14 @@
+debug/main.o
+debug/customermenu.o
+debug/login.o
+debug/register.o
+debug/searchandbuy.o
+debug/.o
+debug/connection.o
+debug/dbusers.o
+debug/.o
+debug/users.o
+debug/moc_customermenu.o
+debug/moc_login.o
+debug/moc_register.o
+debug/moc_searchandbuy.o

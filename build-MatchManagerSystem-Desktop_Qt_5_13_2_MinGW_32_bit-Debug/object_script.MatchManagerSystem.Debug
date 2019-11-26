@@ -1,0 +1,15 @@
+debug/main.o
+debug/customermenu.o
+debug/mainwindow.o
+debug/register.o
+debug/searchandbuy.o
+debug/deleteuserform.o
+debug/connection.o
+debug/dbusers.o
+debug/users.o
+debug/userservices.o
+debug/moc_customermenu.o
+debug/moc_mainwindow.o
+debug/moc_register.o
+debug/moc_searchandbuy.o
+debug/moc_deleteuserform.o

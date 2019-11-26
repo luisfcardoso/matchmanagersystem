@@ -15,26 +15,21 @@ DEFINES += QT_DEPRECATED_WARNINGS
 # You can also select to disable deprecated APIs only up to a certain version of Qt.
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
+# Main source
 SOURCES += \
-    customermenu.cpp \
-    main.cpp \
-    mainwindow.cpp \
-    register.cpp \
-    searchandbuy.cpp
+    main.cpp
 
-HEADERS += \
-    customermenu.h \
-    mainwindow.h \
-    register.h \
-    searchandbuy.h
+# Headers, Sources and Forms from Presentation Layer
+include(presentation.pri)
 
-FORMS += \
-    customermenu.ui \
-    mainwindow.ui \
-    register.ui \
-    searchandbuy.ui
+# Headers, Sources and Forms from Persistence Layer
+include(persistance.pri)
+
+# Headers, Sources and Forms from Service Layer
+include(service.pri)
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+

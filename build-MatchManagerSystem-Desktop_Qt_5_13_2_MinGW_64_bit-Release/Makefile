@@ -231,6 +231,9 @@ Makefile: ../MatchManagerSystem/MatchManagerSystem.pro C:/Qt/Qt5.13.2/5.13.2/min
 		C:/Qt/Qt5.13.2/5.13.2/mingw73_64/mkspecs/features/toolchain.prf \
 		C:/Qt/Qt5.13.2/5.13.2/mingw73_64/mkspecs/features/default_pre.prf \
 		C:/Qt/Qt5.13.2/5.13.2/mingw73_64/mkspecs/features/win32/default_pre.prf \
+		../MatchManagerSystem/presentation.pri \
+		../MatchManagerSystem/persistance.pri \
+		../MatchManagerSystem/service.pri \
 		C:/Qt/Qt5.13.2/5.13.2/mingw73_64/mkspecs/features/resolve_config.prf \
 		C:/Qt/Qt5.13.2/5.13.2/mingw73_64/mkspecs/features/exclusive_builds_post.prf \
 		C:/Qt/Qt5.13.2/5.13.2/mingw73_64/mkspecs/features/default_post.prf \
@@ -424,6 +427,9 @@ C:/Qt/Qt5.13.2/5.13.2/mingw73_64/mkspecs/features/exclusive_builds.prf:
 C:/Qt/Qt5.13.2/5.13.2/mingw73_64/mkspecs/features/toolchain.prf:
 C:/Qt/Qt5.13.2/5.13.2/mingw73_64/mkspecs/features/default_pre.prf:
 C:/Qt/Qt5.13.2/5.13.2/mingw73_64/mkspecs/features/win32/default_pre.prf:
+../MatchManagerSystem/presentation.pri:
+../MatchManagerSystem/persistance.pri:
+../MatchManagerSystem/service.pri:
 C:/Qt/Qt5.13.2/5.13.2/mingw73_64/mkspecs/features/resolve_config.prf:
 C:/Qt/Qt5.13.2/5.13.2/mingw73_64/mkspecs/features/exclusive_builds_post.prf:
 C:/Qt/Qt5.13.2/5.13.2/mingw73_64/mkspecs/features/default_post.prf:

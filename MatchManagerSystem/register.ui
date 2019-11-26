@@ -33,13 +33,6 @@
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="btn_clear">
-        <property name="text">
-         <string>Limpar</string>
-        </property>
-       </widget>
-      </item>
-      <item>
        <widget class="QPushButton" name="btn_return">
         <property name="text">
          <string>Voltar</string>
@@ -77,39 +70,7 @@ font: 75 14pt &quot;MS Shell Dlg 2&quot;;</string>
     </item>
     <item row="2" column="0">
      <layout class="QGridLayout" name="gridLayout_2">
-      <item row="3" column="1">
-       <widget class="QLineEdit" name="line_card_number"/>
-      </item>
-      <item row="5" column="1">
-       <widget class="QLineEdit" name="line_expiration_date_card_2"/>
-      </item>
-      <item row="0" column="1">
-       <widget class="QLineEdit" name="line_name"/>
-      </item>
-      <item row="1" column="1">
-       <widget class="QLineEdit" name="line_cpf"/>
-      </item>
       <item row="2" column="0">
-       <widget class="QLabel" name="lb_password">
-        <property name="text">
-         <string>Senha</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignCenter</set>
-        </property>
-       </widget>
-      </item>
-      <item row="6" column="0">
-       <widget class="QLabel" name="lb_authority">
-        <property name="text">
-         <string>Privilégio</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignCenter</set>
-        </property>
-       </widget>
-      </item>
-      <item row="3" column="0">
        <widget class="QLabel" name="lb_card_number">
         <property name="text">
          <string>Número do Cartão
@@ -120,24 +81,10 @@ de Crédito</string>
         </property>
        </widget>
       </item>
-      <item row="0" column="0">
-       <widget class="QLabel" name="lb_name">
-        <property name="text">
-         <string>Nome Completo</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignCenter</set>
-        </property>
-       </widget>
-      </item>
       <item row="2" column="1">
-       <widget class="QLineEdit" name="line_password">
-        <property name="echoMode">
-         <enum>QLineEdit::Password</enum>
-        </property>
-       </widget>
+       <widget class="QLineEdit" name="line_card_number"/>
       </item>
-      <item row="4" column="0">
+      <item row="3" column="0">
        <widget class="QLabel" name="lb_security_number_card">
         <property name="text">
          <string>Código
@@ -149,36 +96,10 @@ Cartão de Crédito</string>
         </property>
        </widget>
       </item>
-      <item row="5" column="0">
-       <widget class="QLabel" name="lb_expiration_date_card">
-        <property name="text">
-         <string>Data de
-Validade do Cartão
-de Crédito</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignCenter</set>
-        </property>
-       </widget>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="line_cpf"/>
       </item>
-      <item row="1" column="0">
-       <widget class="QLabel" name="lb_cpf">
-        <property name="text">
-         <string>CPF</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignCenter</set>
-        </property>
-       </widget>
-      </item>
-      <item row="4" column="1">
-       <widget class="QLineEdit" name="line_security_number_card">
-        <property name="echoMode">
-         <enum>QLineEdit::Password</enum>
-        </property>
-       </widget>
-      </item>
-      <item row="6" column="1">
+      <item row="5" column="1">
        <layout class="QHBoxLayout" name="horizontalLayout_2">
         <item>
          <widget class="QRadioButton" name="rd_customer">
@@ -193,6 +114,202 @@ de Crédito</string>
            <string>Gestor de Jogos</string>
           </property>
          </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="3" column="1">
+       <widget class="QLineEdit" name="line_security_number_card">
+        <property name="echoMode">
+         <enum>QLineEdit::Password</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="lb_cpf">
+        <property name="text">
+         <string>CPF</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="lb_expiration_date_card">
+        <property name="text">
+         <string>Data de
+Validade do Cartão
+de Crédito
+Formato: 08/25</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="lb_password">
+        <property name="text">
+         <string>Senha</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0">
+       <widget class="QLabel" name="lb_authority">
+        <property name="text">
+         <string>Privilégio</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="line_password">
+        <property name="echoMode">
+         <enum>QLineEdit::Password</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <widget class="QComboBox" name="cb_month">
+          <item>
+           <property name="text">
+            <string>01</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>02</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>03</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>04</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>05</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>06</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>07</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>08</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>09</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>10</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>11</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>12</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>/</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="cb_year">
+          <item>
+           <property name="text">
+            <string>2019</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>2020</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>2021</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>2022</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>2023</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>2024</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>2025</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>2026</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>300</width>
+            <height>0</height>
+           </size>
+          </property>
+         </spacer>
         </item>
        </layout>
       </item>
@@ -215,16 +332,13 @@ de Crédito</string>
   </widget>
  </widget>
  <tabstops>
-  <tabstop>line_name</tabstop>
   <tabstop>line_cpf</tabstop>
   <tabstop>line_password</tabstop>
   <tabstop>line_card_number</tabstop>
   <tabstop>line_security_number_card</tabstop>
-  <tabstop>line_expiration_date_card_2</tabstop>
   <tabstop>rd_customer</tabstop>
   <tabstop>rd_game_manager</tabstop>
   <tabstop>btn_register</tabstop>
-  <tabstop>btn_clear</tabstop>
   <tabstop>btn_return</tabstop>
  </tabstops>
  <resources/>

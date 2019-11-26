@@ -1,4 +1,4 @@
-#include "mainwindow.h"
+#include "mainWindow.h"
 #include "ui_mainwindow.h"
 #include "register.h"
 #include "customermenu.h"
@@ -29,6 +29,16 @@ void MainWindow::on_btn_register_clicked()
 
 void MainWindow::on_btn_enter_clicked()
 {
-    CustomerMenu customermenuscreen;
-    customermenuscreen.exec();
+    QString cpfText = ui->line_cpf->text();
+    QString passwordText = ui->line_password->text();
+
+    userServices userService;
+
+    if(false == userService.authenticate(cpfText,passwordText)) {
+        QMessageBox::information(this,"Acesso não realizado","Por favor, confira se o CPF e a senha estão corretos.");
+    } else {
+        CustomerMenu customermenuscreen;
+        customermenuscreen.exec();
+    }
+
 }

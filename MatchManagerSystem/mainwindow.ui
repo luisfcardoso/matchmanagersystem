@@ -45,17 +45,24 @@ de Jogos de Futebol</string>
     </property>
     <layout class="QGridLayout" name="gridLayout">
      <item row="0" column="0">
-      <widget class="QLabel" name="lb_email">
+      <widget class="QLabel" name="lb_cpf">
        <property name="text">
-        <string>E-mail</string>
+        <string>CPF</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
        </property>
       </widget>
      </item>
      <item row="0" column="1">
-      <widget class="QLineEdit" name="line_email"/>
+      <widget class="QLineEdit" name="line_cpf"/>
      </item>
      <item row="1" column="1">
-      <widget class="QLineEdit" name="line_password"/>
+      <widget class="QLineEdit" name="line_password">
+       <property name="echoMode">
+        <enum>QLineEdit::Password</enum>
+       </property>
+      </widget>
      </item>
      <item row="1" column="0">
       <widget class="QLabel" name="lb_password">
@@ -113,7 +120,7 @@ de Jogos de Futebol</string>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <tabstops>
-  <tabstop>line_email</tabstop>
+  <tabstop>line_cpf</tabstop>
   <tabstop>line_password</tabstop>
   <tabstop>btn_enter</tabstop>
   <tabstop>btn_register</tabstop>

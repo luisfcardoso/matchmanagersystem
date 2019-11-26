@@ -1,0 +1,15 @@
+release/main.o
+release/customermenu.o
+release/mainwindow.o
+release/register.o
+release/searchandbuy.o
+release/deleteuserform.o
+release/connection.o
+release/dbusers.o
+release/users.o
+release/userservices.o
+release/moc_customermenu.o
+release/moc_mainwindow.o
+release/moc_register.o
+release/moc_searchandbuy.o
+release/moc_deleteuserform.o
