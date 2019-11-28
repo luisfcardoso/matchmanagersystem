@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>400</width>
-    <height>309</height>
+    <height>369</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -42,102 +42,35 @@
      <x>20</x>
      <y>60</y>
      <width>361</width>
-     <height>244</height>
+     <height>287</height>
     </rect>
    </property>
    <layout class="QGridLayout" name="gridLayout">
-    <item row="1" column="0">
-     <widget class="QLabel" name="lb_team_2">
-      <property name="text">
-       <string>Time 2</string>
-      </property>
-      <property name="alignment">
-       <set>Qt::AlignCenter</set>
-      </property>
+    <item row="6" column="2">
+     <widget class="QComboBox" name="cb_type">
+      <item>
+       <property name="text">
+        <string>Local</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Estadual</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Nacional</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Internacional</string>
+       </property>
+      </item>
      </widget>
     </item>
-    <item row="1" column="1">
-     <widget class="QLineEdit" name="line_team2"/>
-    </item>
-    <item row="0" column="0">
-     <widget class="QLabel" name="lb_team_1">
-      <property name="text">
-       <string>Time 1</string>
-      </property>
-      <property name="alignment">
-       <set>Qt::AlignCenter</set>
-      </property>
-     </widget>
-    </item>
-    <item row="0" column="1">
-     <widget class="QLineEdit" name="line_team1"/>
-    </item>
-    <item row="6" column="0">
-     <widget class="QLabel" name="lb_hour">
-      <property name="text">
-       <string>Hora do Jogo</string>
-      </property>
-      <property name="alignment">
-       <set>Qt::AlignCenter</set>
-      </property>
-     </widget>
-    </item>
-    <item row="4" column="1">
-     <widget class="QComboBox" name="cb_type"/>
-    </item>
-    <item row="3" column="1">
-     <widget class="QLineEdit" name="line_stadium"/>
-    </item>
-    <item row="2" column="0">
-     <widget class="QLabel" name="lb_description">
-      <property name="text">
-       <string>Descrição</string>
-      </property>
-      <property name="alignment">
-       <set>Qt::AlignCenter</set>
-      </property>
-     </widget>
-    </item>
-    <item row="5" column="0">
-     <widget class="QLabel" name="lb_date">
-      <property name="text">
-       <string>Data do Jogo</string>
-      </property>
-      <property name="alignment">
-       <set>Qt::AlignCenter</set>
-      </property>
-     </widget>
-    </item>
-    <item row="3" column="0">
-     <widget class="QLabel" name="lb_stadium">
-      <property name="text">
-       <string>Estádio</string>
-      </property>
-      <property name="alignment">
-       <set>Qt::AlignCenter</set>
-      </property>
-     </widget>
-    </item>
-    <item row="2" column="1">
-     <widget class="QLineEdit" name="line_description"/>
-    </item>
-    <item row="4" column="0">
-     <widget class="QLabel" name="lb_type_game">
-      <property name="text">
-       <string>Tipo de Jogo</string>
-      </property>
-      <property name="alignment">
-       <set>Qt::AlignCenter</set>
-      </property>
-     </widget>
-    </item>
-    <item row="5" column="1">
-     <widget class="QDateEdit" name="date_game"/>
-    </item>
-    <item row="6" column="1">
-     <widget class="QTimeEdit" name="time_hour"/>
-    </item>
-    <item row="7" column="1">
+    <item row="10" column="2">
      <layout class="QHBoxLayout" name="horizontalLayout_2">
       <item>
        <widget class="QPushButton" name="btn_add_game">
@@ -155,9 +88,150 @@
       </item>
      </layout>
     </item>
+    <item row="2" column="2">
+     <widget class="QLineEdit" name="line_description"/>
+    </item>
+    <item row="8" column="2">
+     <widget class="QTimeEdit" name="time_hour"/>
+    </item>
+    <item row="7" column="0">
+     <widget class="QLabel" name="lb_date">
+      <property name="text">
+       <string>Data do Jogo</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLabel" name="lb_cidade">
+      <property name="text">
+       <string>Cidade</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="lb_description">
+      <property name="text">
+       <string>Descrição</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="2">
+     <widget class="QLineEdit" name="line_stadium"/>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="lb_stadium">
+      <property name="text">
+       <string>Estádio</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLabel" name="lb_team_1">
+      <property name="text">
+       <string>Time 1</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="0">
+     <widget class="QLabel" name="lb_estado">
+      <property name="text">
+       <string>Estado</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="2">
+     <widget class="QLineEdit" name="line_state"/>
+    </item>
+    <item row="7" column="2">
+     <widget class="QDateEdit" name="date_game"/>
+    </item>
+    <item row="1" column="2">
+     <widget class="QLineEdit" name="line_team2"/>
+    </item>
+    <item row="4" column="2">
+     <widget class="QLineEdit" name="line_city"/>
+    </item>
+    <item row="0" column="2">
+     <widget class="QLineEdit" name="line_team1"/>
+    </item>
+    <item row="6" column="0">
+     <widget class="QLabel" name="lb_type_game">
+      <property name="text">
+       <string>Tipo de Jogo</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="0">
+     <widget class="QLabel" name="lb_hour">
+      <property name="text">
+       <string>Hora do Jogo</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="lb_team_2">
+      <property name="text">
+       <string>Time 2</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="9" column="0">
+     <widget class="QLabel" name="lb_price">
+      <property name="text">
+       <string>Preço (R$)</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="9" column="2">
+     <widget class="QDoubleSpinBox" name="double_price"/>
+    </item>
    </layout>
   </widget>
  </widget>
+ <tabstops>
+  <tabstop>line_team1</tabstop>
+  <tabstop>line_team2</tabstop>
+  <tabstop>line_description</tabstop>
+  <tabstop>line_stadium</tabstop>
+  <tabstop>line_city</tabstop>
+  <tabstop>line_state</tabstop>
+  <tabstop>cb_type</tabstop>
+  <tabstop>date_game</tabstop>
+  <tabstop>time_hour</tabstop>
+  <tabstop>double_price</tabstop>
+  <tabstop>btn_add_game</tabstop>
+  <tabstop>btn_return</tabstop>
+ </tabstops>
  <resources/>
  <connections/>
 </ui>

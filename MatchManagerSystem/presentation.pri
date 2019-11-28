@@ -8,7 +8,8 @@ SOURCES += \
     managermenu.cpp \
     bought_tickets.cpp \
     addgame.cpp \
-    managegame.cpp
+    managegame.cpp \
+    viewsales.cpp
 
 HEADERS += \
     customermenu.h \
@@ -19,7 +20,8 @@ HEADERS += \
     managermenu.h \
     bought_tickets.h \
     addgame.h \
-    managegame.h
+    managegame.h \
+    viewsales.h
 
 FORMS += \
     customermenu.ui \
@@ -30,4 +32,5 @@ FORMS += \
     managermenu.ui \
     bought_tickets.ui \
     addgame.ui \
-    managegame.ui
+    managegame.ui \
+    viewsales.ui

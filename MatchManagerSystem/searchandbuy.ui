@@ -110,145 +110,6 @@
     <item row="1" column="0">
      <widget class="QDateEdit" name="date_begin"/>
     </item>
-    <item row="1" column="3">
-     <widget class="QComboBox" name="cb_state">
-      <item>
-       <property name="text">
-        <string>AC</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>AL</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>AP</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>AM</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>BA</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>CE</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>DF</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>ES</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>GO</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>MA</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>MT</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>MS</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>MG</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>PA</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>PB</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>PR</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>PE</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>PI</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>RJ</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>RN</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>RS</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>RO</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>RR</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>SC</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>SP</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>SE</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>TO</string>
-       </property>
-      </item>
-     </widget>
-    </item>
     <item row="1" column="2">
      <widget class="QLineEdit" name="line_city"/>
     </item>
@@ -275,6 +136,9 @@
       </property>
      </widget>
     </item>
+    <item row="1" column="3">
+     <widget class="QLineEdit" name="lineEdit"/>
+    </item>
    </layout>
   </widget>
   <widget class="QPushButton" name="btn_return">
@@ -295,7 +159,6 @@
   <tabstop>date_begin</tabstop>
   <tabstop>date_end</tabstop>
   <tabstop>line_city</tabstop>
-  <tabstop>cb_state</tabstop>
   <tabstop>btn_search</tabstop>
   <tabstop>table_match</tabstop>
   <tabstop>btn_return</tabstop>

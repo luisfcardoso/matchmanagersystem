@@ -11,7 +11,6 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
-#include <QtWidgets/QComboBox>
 #include <QtWidgets/QDateEdit>
 #include <QtWidgets/QDialog>
 #include <QtWidgets/QGridLayout>
@@ -36,10 +35,10 @@ public:
     QLabel *lb_end;
     QLabel *lb_state;
     QDateEdit *date_begin;
-    QComboBox *cb_state;
     QLineEdit *line_city;
     QLabel *lb_begin;
     QPushButton *btn_search;
+    QLineEdit *lineEdit;
     QPushButton *btn_return;
 
     void setupUi(QDialog *SearchAndBuy)
@@ -99,38 +98,6 @@ public:
 
         gridLayout->addWidget(date_begin, 1, 0, 1, 1);
 
-        cb_state = new QComboBox(gridLayoutWidget);
-        cb_state->addItem(QString());
-        cb_state->addItem(QString());
-        cb_state->addItem(QString());
-        cb_state->addItem(QString());
-        cb_state->addItem(QString());
-        cb_state->addItem(QString());
-        cb_state->addItem(QString());
-        cb_state->addItem(QString());
-        cb_state->addItem(QString());
-        cb_state->addItem(QString());
-        cb_state->addItem(QString());
-        cb_state->addItem(QString());
-        cb_state->addItem(QString());
-        cb_state->addItem(QString());
-        cb_state->addItem(QString());
-        cb_state->addItem(QString());
-        cb_state->addItem(QString());
-        cb_state->addItem(QString());
-        cb_state->addItem(QString());
-        cb_state->addItem(QString());
-        cb_state->addItem(QString());
-        cb_state->addItem(QString());
-        cb_state->addItem(QString());
-        cb_state->addItem(QString());
-        cb_state->addItem(QString());
-        cb_state->addItem(QString());
-        cb_state->addItem(QString());
-        cb_state->setObjectName(QString::fromUtf8("cb_state"));
-
-        gridLayout->addWidget(cb_state, 1, 3, 1, 1);
-
         line_city = new QLineEdit(gridLayoutWidget);
         line_city->setObjectName(QString::fromUtf8("line_city"));
 
@@ -148,13 +115,17 @@ public:
 
         gridLayout->addWidget(btn_search, 1, 4, 1, 1);
 
+        lineEdit = new QLineEdit(gridLayoutWidget);
+        lineEdit->setObjectName(QString::fromUtf8("lineEdit"));
+
+        gridLayout->addWidget(lineEdit, 1, 3, 1, 1);
+
         btn_return = new QPushButton(SearchAndBuy);
         btn_return->setObjectName(QString::fromUtf8("btn_return"));
         btn_return->setGeometry(QRect(470, 340, 111, 23));
         QWidget::setTabOrder(date_begin, date_end);
         QWidget::setTabOrder(date_end, line_city);
-        QWidget::setTabOrder(line_city, cb_state);
-        QWidget::setTabOrder(cb_state, btn_search);
+        QWidget::setTabOrder(line_city, btn_search);
         QWidget::setTabOrder(btn_search, table_match);
         QWidget::setTabOrder(table_match, btn_return);
 
@@ -170,34 +141,6 @@ public:
         lb_city->setText(QCoreApplication::translate("SearchAndBuy", "Nome da Cidade", nullptr));
         lb_end->setText(QCoreApplication::translate("SearchAndBuy", "Data de Fim", nullptr));
         lb_state->setText(QCoreApplication::translate("SearchAndBuy", "Estado", nullptr));
-        cb_state->setItemText(0, QCoreApplication::translate("SearchAndBuy", "AC", nullptr));
-        cb_state->setItemText(1, QCoreApplication::translate("SearchAndBuy", "AL", nullptr));
-        cb_state->setItemText(2, QCoreApplication::translate("SearchAndBuy", "AP", nullptr));
-        cb_state->setItemText(3, QCoreApplication::translate("SearchAndBuy", "AM", nullptr));
-        cb_state->setItemText(4, QCoreApplication::translate("SearchAndBuy", "BA", nullptr));
-        cb_state->setItemText(5, QCoreApplication::translate("SearchAndBuy", "CE", nullptr));
-        cb_state->setItemText(6, QCoreApplication::translate("SearchAndBuy", "DF", nullptr));
-        cb_state->setItemText(7, QCoreApplication::translate("SearchAndBuy", "ES", nullptr));
-        cb_state->setItemText(8, QCoreApplication::translate("SearchAndBuy", "GO", nullptr));
-        cb_state->setItemText(9, QCoreApplication::translate("SearchAndBuy", "MA", nullptr));
-        cb_state->setItemText(10, QCoreApplication::translate("SearchAndBuy", "MT", nullptr));
-        cb_state->setItemText(11, QCoreApplication::translate("SearchAndBuy", "MS", nullptr));
-        cb_state->setItemText(12, QCoreApplication::translate("SearchAndBuy", "MG", nullptr));
-        cb_state->setItemText(13, QCoreApplication::translate("SearchAndBuy", "PA", nullptr));
-        cb_state->setItemText(14, QCoreApplication::translate("SearchAndBuy", "PB", nullptr));
-        cb_state->setItemText(15, QCoreApplication::translate("SearchAndBuy", "PR", nullptr));
-        cb_state->setItemText(16, QCoreApplication::translate("SearchAndBuy", "PE", nullptr));
-        cb_state->setItemText(17, QCoreApplication::translate("SearchAndBuy", "PI", nullptr));
-        cb_state->setItemText(18, QCoreApplication::translate("SearchAndBuy", "RJ", nullptr));
-        cb_state->setItemText(19, QCoreApplication::translate("SearchAndBuy", "RN", nullptr));
-        cb_state->setItemText(20, QCoreApplication::translate("SearchAndBuy", "RS", nullptr));
-        cb_state->setItemText(21, QCoreApplication::translate("SearchAndBuy", "RO", nullptr));
-        cb_state->setItemText(22, QCoreApplication::translate("SearchAndBuy", "RR", nullptr));
-        cb_state->setItemText(23, QCoreApplication::translate("SearchAndBuy", "SC", nullptr));
-        cb_state->setItemText(24, QCoreApplication::translate("SearchAndBuy", "SP", nullptr));
-        cb_state->setItemText(25, QCoreApplication::translate("SearchAndBuy", "SE", nullptr));
-        cb_state->setItemText(26, QCoreApplication::translate("SearchAndBuy", "TO", nullptr));
-
         lb_begin->setText(QCoreApplication::translate("SearchAndBuy", "Data de In\303\255cio", nullptr));
         btn_search->setText(QCoreApplication::translate("SearchAndBuy", "Pesquisar", nullptr));
         btn_return->setText(QCoreApplication::translate("SearchAndBuy", "Voltar", nullptr));
