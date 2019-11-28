@@ -4,8 +4,15 @@ release/mainwindow.o
 release/register.o
 release/searchandbuy.o
 release/deleteuserform.o
+release/managermenu.o
+release/bought_tickets.o
+release/addgame.o
+release/managegame.o
 release/connection.o
+release/dbgames.o
+release/dbtypeofgame.o
 release/dbusers.o
+release/games.o
 release/users.o
 release/userservices.o
 release/moc_customermenu.o
@@ -13,3 +20,7 @@ release/moc_mainwindow.o
 release/moc_register.o
 release/moc_searchandbuy.o
 release/moc_deleteuserform.o
+release/moc_managermenu.o
+release/moc_bought_tickets.o
+release/moc_addgame.o
+release/moc_managegame.o

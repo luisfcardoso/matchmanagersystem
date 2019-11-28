@@ -4,18 +4,30 @@ SOURCES += \
     mainwindow.cpp \
     register.cpp \
     searchandbuy.cpp \
-    deleteuserform.cpp
+    deleteuserform.cpp \
+    managermenu.cpp \
+    bought_tickets.cpp \
+    addgame.cpp \
+    managegame.cpp
 
 HEADERS += \
     customermenu.h \
     mainwindow.h \
     register.h \
     searchandbuy.h \
-    deleteuserform.h
+    deleteuserform.h \
+    managermenu.h \
+    bought_tickets.h \
+    addgame.h \
+    managegame.h
 
 FORMS += \
     customermenu.ui \
     mainwindow.ui \
     register.ui \
     searchandbuy.ui \
-    deleteuserform.ui
+    deleteuserform.ui \
+    managermenu.ui \
+    bought_tickets.ui \
+    addgame.ui \
+    managegame.ui

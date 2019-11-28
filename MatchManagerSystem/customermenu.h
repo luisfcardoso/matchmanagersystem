@@ -22,6 +22,8 @@ private slots:
 
     void on_btn_delete_user_clicked();
 
+    void on_btn_bought_tickets_clicked();
+
 private:
     Ui::CustomerMenu *ui;
 };

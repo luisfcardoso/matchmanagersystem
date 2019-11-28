@@ -4,8 +4,15 @@ debug/mainwindow.o
 debug/register.o
 debug/searchandbuy.o
 debug/deleteuserform.o
+debug/managermenu.o
+debug/bought_tickets.o
+debug/addgame.o
+debug/managegame.o
 debug/connection.o
+debug/dbgames.o
+debug/dbtypeofgame.o
 debug/dbusers.o
+debug/games.o
 debug/users.o
 debug/userservices.o
 debug/moc_customermenu.o
@@ -13,3 +20,7 @@ debug/moc_mainwindow.o
 debug/moc_register.o
 debug/moc_searchandbuy.o
 debug/moc_deleteuserform.o
+debug/moc_managermenu.o
+debug/moc_bought_tickets.o
+debug/moc_addgame.o
+debug/moc_managegame.o

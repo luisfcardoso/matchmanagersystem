@@ -59,3 +59,9 @@ QString userServices::addUser(QString cpf, QString password, int privilege, QStr
 
     return "Usuário cadastrado com sucesso!";
 }
+
+Users userServices::getUser(QString cpf) {
+    DBUsers dbUser;
+
+    return dbUser.getUser(cpf);
+}

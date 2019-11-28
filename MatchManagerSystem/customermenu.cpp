@@ -3,6 +3,7 @@
 #include "searchandbuy.h"
 #include "dbusers.h"
 #include "deleteuserform.h"
+#include "bought_tickets.h"
 
 CustomerMenu::CustomerMenu(QWidget *parent) :
     QDialog(parent),
@@ -31,4 +32,10 @@ void CustomerMenu::on_btn_delete_user_clicked()
 {
     DeleteUserForm deleteUserScreen;
     deleteUserScreen.exec();
+}
+
+void CustomerMenu::on_btn_bought_tickets_clicked()
+{
+    bought_tickets boughtScreen;
+    boughtScreen.exec();
 }

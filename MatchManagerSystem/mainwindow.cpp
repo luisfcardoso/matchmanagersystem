@@ -2,6 +2,7 @@
 #include "ui_mainwindow.h"
 #include "register.h"
 #include "customermenu.h"
+#include "managermenu.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -37,8 +38,14 @@ void MainWindow::on_btn_enter_clicked()
     if(false == userService.authenticate(cpfText,passwordText)) {
         QMessageBox::information(this,"Acesso não realizado","Por favor, confira se o CPF e a senha estão corretos.");
     } else {
-        CustomerMenu customermenuscreen;
-        customermenuscreen.exec();
+
+        if(userService.getUser(cpfText).GetprivilegeID() == 2) {
+            managermenu managermenuscreen;
+            managermenuscreen.exec();
+        } else {
+            CustomerMenu customermenuscreen;
+            customermenuscreen.exec();
+        }
     }
 
 }
